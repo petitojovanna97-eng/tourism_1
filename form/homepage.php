@@ -1,14 +1,14 @@
 <?php
-$servername = "localhost";
-$username   = "root";
-$password   = "";
-$database   = "tourismdestination_db";
-$conn = new mysqli($servername, $username, $password, $database);
-if ($conn->connect_error) {
-    die("❌ Connection failed: " . $conn->connect_error);
-}
-$carousel_result = $conn->query("SELECT * FROM carousel_ft_tb ORDER BY cft_id ASC");
-$hero_result = $conn->query("SELECT * FROM hero_ft_tb ORDER BY hft_id ASC");
+    $servername = "localhost";
+    $username   = "root";
+    $password   = "";
+    $database   = "tourismdestination_db";
+    $conn = new mysqli($servername, $username, $password, $database);
+    if ($conn->connect_error) {
+        die("❌ Connection failed: " . $conn->connect_error);
+    }
+    $carousel_result = $conn->query("SELECT * FROM carousel_ft_tb ORDER BY cft_id ASC");
+    $hero_result = $conn->query("SELECT * FROM hero_ft_tb ORDER BY hft_id ASC");
 ?>
 
 <!DOCTYPE html>
